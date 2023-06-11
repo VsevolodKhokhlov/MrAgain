@@ -1,0 +1,77 @@
+@import '../../../assets/styles/variables.less';
+.footer-link-area ul {
+  color: #06c987;
+  padding-left: 19px;
+  a {
+    color: #fff;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-circle {
+    width: 34px;
+    height: 34px;
+    background: #06c987;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 12px;
+  
+  }
+  .anticon {
+    position: absolute;
+    font-size: 20px;
+    top: 20%;
+    right: 20%;
+    color: @green-color;
+    background-color: #fff;
+    border-radius: 50%;
+  }
+  
+  .facebook {
+    .anticon {
+      right: 26%
+    }
+  }
+  
+  .linkedin {
+    .anticon {
+      background-color: @green-color;
+      color: #fff;
+      border-radius: 50%;
+    }
+  }
+  
+  .instagram {
+    .anticon {
+      border-radius: 23%;
+    }
+  }
+}
+
+.footer-link-area .follow-us ul {
+  padding-left: 0px;
+}
+
+.follow-us ul li {
+  list-style: none;
+  margin-bottom: 5px;
+}
+
+.footer-brand-content {
+  color: #fff;
+  font-size: 15px;
+}
+
+
+
+// SC CSS start here
+
+// @media (max-width: 1363px){
+// .custm-footer-brandarea{width: 100% !important;}
+// .footer-link-area{width: 100% !important;}
+
+// // .custome-footer-sitename{width: 30% !important;}
+// // .custome-footer-servicing{width: 30% !important;}
+// // .follow-us{width: 30% !important;}
+// }

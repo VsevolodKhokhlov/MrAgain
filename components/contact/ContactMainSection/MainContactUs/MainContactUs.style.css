@@ -1,0 +1,15 @@
+.main-contact-us-blog {
+  width: 328px;
+  height: 100%;
+}
+
+.contact-form-input {
+  height: 52px;
+  width: 100%;
+}
+
+@media (max-width: 460px){
+  .cutome_input {margin: 10px 0 !important;}
+}
+
+

@@ -1,0 +1,128 @@
+.appointment-directly {
+  width: 100%;
+  // height: 404px;
+  float: left;
+  padding: 28px 32px 30px 32px;
+  border: 1px solid #eaeaea;
+  margin-bottom: 10px;
+  &-wrap {
+    width: 100%;
+    height: 100%;
+    .adw-title {
+      width: 100%;
+      height: 76px;
+      font-weight: 700;
+      font-size: 20px;
+    }
+    .adw-content {
+      width: 100%;
+      // height: 224px;
+      // display: flex;
+      float: left;
+      justify-content: space-between;
+      .ant-calendar-input-wrap {
+        display: none;
+      }
+      .adw-calendar {
+        width: 50%;
+        height: 275px;
+        float: left;
+        .react-calendar {
+          line-height: 0.4;
+          padding-bottom: 5px;
+          border: 2px solid #a0a096;
+          &__navigation {
+            margin-bottom: 5px;
+            &__prev2-button {
+              display: none;
+            }
+            &__next2-button {
+              display: none;
+            }
+          }
+          &__month-view__days {
+            button {
+              margin: 4px;
+              border: 1px solid #eaeaea;
+              width: 36px;
+              height: 22px;
+              flex-basis: unset !important;
+            }
+          }
+        }
+        .react-calendar__month-view__days__day--weekend {
+          color: blue;
+        }
+        .react-calendar__month-view__days
+          .react-calendar__month-view__days__day--weekend
+          + .react-calendar__month-view__days__day--weekend {
+          color: #dc3545;
+        }
+      }
+      .adw-other-check {
+        width: 50%;
+        height: 100%;
+        // display: flex;
+        float: left;
+        align-items: center;
+        padding: 0 0 0 30px;
+        &-wrap {
+          display: flex;
+          flex-direction: column;
+          height: 122px;
+          justify-content: space-between;
+          font-weight: 500;
+          .ant-checkbox-wrapper {
+            margin-left: 0px;
+          }
+          .ant-checkbox-inner {
+            width: 20px;
+            height: 19px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.ant-calendar-input-wrap {
+  display: none;
+}
+.ant-calendar-footer {
+  display: none;
+}
+
+// SC CSS start here
+
+@media (max-width: 1285px){
+  .appointment-directly-wrap .adw-content .adw-calendar{width: 100%;}
+  .appointment-directly-wrap .adw-content .adw-other-check{width: 100%;}
+} 
+
+@media (max-width: 990px){
+  .profile-main-container .wrap .review-select-blog{display: unset !important;}
+  .profile-main-container .wrap .review-select-blog{height: unset !important;}
+  .device-type-select{height: unset !important; margin-top: 25px;}
+  .shop-service-info{width: 100% !important;}
+  .shop-service-info-wrap{width: 100% !important; padding: 20px 20px;}
+  .profile-main-container .wrap{display: unset !important;}   
+
+} 
+
+@media (max-width:520px){
+  .reparation-change-modal .modal-dialog .select-device-reparation{display: unset !important; width: 100% !important; float: left;}
+  .reparation-change-modal .modal-dialog .repair-input-group{display: unset !important; width: 100% !important; float: left;}
+  .reparation-change-modal .modal-dialog .repair-input-group .repair-input-label{width: 100% !important; float: left; text-align: left !important;}
+  .reparation-change-modal .modal-dialog .repair-input-group .repair-input{width: 100% !important; float: left;}
+}
+
+@media (max-width: 420px){
+  .ant-calendar{width: 220px !important;}
+  .shop-service-table .ant-table-thead > tr > th{padding: 9px 10px !important;}
+  
+}
+@media (max-width: 359px){
+  .ant-calendar{width: 190px !important;}
+}
+
+

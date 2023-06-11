@@ -1,0 +1,71 @@
+/* sansation-300normal - latin */
+@font-face {
+  font-family: 'Sansation';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 300;
+  src:
+    local('Sansation Light '),
+    local('Sansation-Light'),
+    url('./sansation/Sansation-Light.ttf') format('truetype');
+}
+
+/* sansation-300italic - latin */
+@font-face {
+  font-family: 'Sansation';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 300;
+  src:
+    local('Sansation Light italic'),
+    local('Sansation-Lightitalic'),
+    url('./sansation/Sansation-LightItalic.ttf') format('truetype');
+}
+
+/* sansation-500normal - latin */
+@font-face {
+  font-family: 'Sansation';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 500;
+  src:
+    local('Sansation Regular '),
+    local('Sansation-Regular'),
+    url('./sansation/Sansation-Regular.ttf') format('truetype');
+}
+
+/* sansation-500italic - latin */
+@font-face {
+  font-family: 'Sansation';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 500;
+  src:
+    local('Sansation Regular italic'),
+    local('Sansation-Italic'),
+    url('./sansation/Sansation-Italic.ttf') format('truetype');
+}
+
+/* sansation-700normal - latin */
+@font-face {
+  font-family: 'Sansation';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local('Sansation Bold '),
+    local('Sansation-Bold'),
+    url('./sansation/Sansation-Bold.ttf') format('truetype');
+}
+
+/* sansation-700italic - latin */
+@font-face {
+  font-family: 'Sansation';
+  font-style: italic;
+  font-display: swap;
+  font-weight: 700;
+  src:
+    local('Sansation Bold italic'),
+    local('Sansation-Bolditalic'),
+    url('./sansation/Sansation-BoldItalic.ttf') format('truetype'); /* Modern Browsers */
+}

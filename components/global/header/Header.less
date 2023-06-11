@@ -1,0 +1,180 @@
+@import "../../../assets/styles/variables.less";
+
+.App-header {
+  display: flex;
+  align-items: center;
+  height: @header-height;
+  justify-content: space-between;
+  padding: 0px 135px;
+  border-bottom: 1px solid #81868e;
+  background-color: #fff;
+  z-index: 1;
+
+  .logo-blog {
+    width: 10%;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    font-family: "Sansation-Bold";
+
+    .logo {
+      margin-right: 10px;
+      transition: opacity 250ms ease-in-out;
+      display: flex;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    .logo img{width: 100%;}
+
+    .logo-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      .top {
+        height: 26px;
+        font-size: 24px;
+        color: #000;
+      }
+
+      .bottom {
+        font-size: 20px;
+        color: @green-color;
+      }
+    }
+  }
+
+  .ant-menu {
+    border-bottom: none;
+    font-size: 18px;
+    .ant-menu-item {
+      border-bottom: none;
+      a:hover {
+        color: @green-color;
+      }
+      border-bottom-color: #3d4450;
+    }
+    .active {
+      color: @green-color;
+    }
+    .home-link {
+      color: black;
+    }
+  }
+
+  .ant-btn {
+    width: 116px;
+    height: 40px;
+    font-size: 18px;
+    border: none;
+  }
+  .ant-btn-login {
+    color: #fff;
+    margin-right: 15px;
+    background-color: @dark-color;
+  }
+
+  .ant-btn-register {
+    color: #fff;
+    background-color: @green-color;
+  }
+  .dropdown-setting-menu {
+    color: #000;
+    margin-right: 100px;
+  }
+  .dropdown-setting-menu:hover {
+    color: #06c987;
+  }
+  .dropdown-user-menu {
+    .anticon {
+      vertical-align: 0.125em;
+    }
+  }
+}
+
+.home-page {
+  background-color: transparent;
+  .logo-blog {
+    .logo-title {
+      .top {
+        color: #fff;
+      }
+
+      .bottom {
+        font-size: 20px;
+        color: @green-color;
+      }
+    }
+  }
+  .ant-menu {
+    background-color: transparent;
+    &-item {
+      a {
+        color: #fff;
+      }
+      .active {
+        color: @green-color;
+      }
+    }
+  }
+  .dropdown-setting-menu {
+    color: #fff;
+    margin-right: 100px;
+  }
+  .dropdown-setting-menu:hover {
+    color: #06c987;
+  }
+  .dropdown-user-menu {
+    .anticon {
+      vertical-align: 0.125em;
+    }
+  }
+}
+
+//#Mobile-Header{display: none;}
+.ant-menu-submenu-title span {
+
+  color: #000;
+  font-size: 23px;
+  border: #9d9999 1px solid;
+  padding: 0px 14px;
+
+}
+// SC CSS start here
+
+@media (max-width: 1300px){
+  .ant-menu-item{padding: 0 10px;}
+}
+
+@media (max-width: 1212px){
+  .App-header{padding:0px 75px;}
+}
+
+
+@media (max-width: 1100px){
+  .App-header{
+    height: 100%;
+  }
+  #Mobile-Header{display: block; position: relative;
+    overflow: hidden;}
+  #Desktop-Header{display: none;}
+  .App-header .logo-blog{width: 20%; float: left;}
+  .navbar-sign{display: inline-block; float: left;}
+  #Mobile-Header .ant-menu{position: absolute; top: 0px; right: 0; width: 320px;}
+  #Mobile-Header .ant-menu li{}
+
+
+}
+
+@media (max-width: 768px){
+  .App-header .logo-blog{ width: 100%; float: left; text-align: center;}
+  .App-header .logo-blog .logo{margin: 0px auto; display: flex;}
+  .navbar-sign{width: 100%; float: left; text-align: center;}
+  #Mobile-Header .ant-menu{width: 100%; float: left; text-align: center; position: unset;}
+  .App-header{padding: 0px 20px; border-bottom: 0px;}
+}
+
+@media (max-width: 670px){
+    #Mobile-Header .navbar-sign{display: none !important;}
+}

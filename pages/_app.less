@@ -1,0 +1,81 @@
+@import "../assets/styles/variables.less";
+
+html body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#__next {
+  height: 100%;
+}
+
+.App {
+  width: 100%;
+
+  &-content {
+    min-height: calc(100vh - (@header-height + @footer-height));
+    background-color: #fff;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+}
+
+.custom-modal {
+  height: calc(100% - 60px);
+}
+
+.custom-modal .rc-dialog-content {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-height: 100%;
+}
+.custom-modal .rc-dialog-body {
+  overflow-y: auto;
+}
+
+.custom-modal .rc-dialog-title h4 {
+  margin: 0;
+}
+
+.share-popover {
+  .ant-popover-arrow {
+    display: none;
+  }
+
+  .ant-popover-inner {
+    background-color: transparent;
+    box-shadow: none;
+  }
+  .ant-popover-inner-content {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .react-share__ShareButton {
+    margin: 4px 0;
+  }
+}
+
+.booking-info-mobile-content.ant-popover-placement-bottomLeft {
+  width: 100%;
+  padding-top: 0;
+
+  .ant-popover-inner {
+    background-color: #f7f7f7;
+    box-shadow: none;
+  }
+
+  .ant-popover-content {
+    position: relative;
+    top: -4px;
+  }
+
+  .ant-popover-inner-content {
+    padding: 0 20px 17px 20px;
+  }
+
+  .ant-popover-arrow {
+    display: none;
+  }
+}

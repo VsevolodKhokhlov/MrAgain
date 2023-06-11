@@ -1,0 +1,95 @@
+.search-form {
+  width: 800px;
+  height: 200px;
+  z-index: 1;
+}
+
+.form-title {
+  display: flex;
+}
+
+.form-subtitle {
+  display: flex;
+}
+
+.main-title {
+  color: #fff;
+  margin-right: 10px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.search-form .form-label {
+  margin-bottom: 30px;
+  display: inline-flex;
+}
+
+.search-form .form-group {
+  margin-left: 180px;
+  height: 100px;
+  width: 440px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0px;
+}
+
+.search-form .form-control, .search-form .btn {
+  width: 353px;
+  float: left;
+  height: 42px;
+  border-radius: 1px;
+}
+
+.search-form .btn-light-green {
+  background-color: #06c987;
+  float: left;
+  width: 20%;
+  color: #000;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.btn-success {
+  color: #000;
+}
+.search-result-modal {
+  .modal-dialog{
+    max-width: 700px;
+  }
+}
+
+// SC CSS start here
+
+@media (max-width: 974px){
+  .search-form .form-group{margin-left: 90px !important;}
+}
+
+@media (max-width: 768px){
+  .search-form .form-group{width: 300px !important;}
+  .search-result-modal .modal-dialog{width: 670px;}
+}
+
+@media (max-width: 668px){
+  .search-form .form-group{margin-left: 30px !important;}
+  .search-result-modal .modal-dialog{width: 520px;}
+}
+
+@media (max-width: 550px){
+  .search-result-modal .modal-dialog{width: 320px; margin: 0px auto;}
+}
+
+@media (max-width: 350px){
+  .search-result-modal .modal-dialog{width: 290px; margin: 0px auto;}
+}
+
+
+
+@media (max-width: 390px){
+  .search-form .form-group{width: 270px !important; margin-left: 0px !important;}
+}
+
+// @media (max-width: 570px){
+//   .form-title{font-size: 30px;}
+// }

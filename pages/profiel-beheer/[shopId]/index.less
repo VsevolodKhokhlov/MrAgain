@@ -1,0 +1,401 @@
+.repair-shop-profile {
+  width: 100%;
+  // height: 890px;
+  .main-title {
+    width: 100%;
+    height: 76px;
+    background-color: #232a38;
+    .wrap {
+      width: 100%;
+      height: 100%;
+      max-width: 1600px;
+      padding-left: 135px;
+      padding-right: 135px;
+      display: flex;
+      align-items: center;
+      h4 {
+        color: #fff;
+      }
+    }
+  }
+  &-container {
+    // height: 818px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    .shop-profile-wrap {
+      width: 100%;
+      max-width: 1600px;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .shop-profile-blog {  
+        width: 100%;
+        // height: 692px;
+        display: flex;
+        justify-content: space-between;
+        margin: 50px 25px 0px 25px;
+        .profile-picture-about {
+          width: 70%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          .profile-picture {
+            width: 100%;
+            height: 300px;
+            .image-picker-input {
+              width: 1px;
+              height: 1px;
+              opacity: 0;
+              position: absolute;
+              overflow: hidden;
+              z-index: -1;
+            }
+            .image-picker-label {
+              padding: 10px 0;
+              background-color: #fff;
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              .image-picker-btn {
+                margin-right: 15px;
+                border: 1px solid #cccaca;
+                padding: 5px;
+                border-radius: 5px;
+              }
+            }
+            img {
+              width: 100%;
+              height: 100%;
+              position: relative;
+            }
+            .change-profile-picture {
+              position: absolute;
+              position: absolute;
+              left: 16.3%;
+              height: 37px;
+              width: 160px;
+              top: 24%;
+              border: none;
+              border-radius: 5px;
+              font-weight: bold;
+            }
+          }
+          .profile-about {
+            width: 100%;
+            height: 200px;
+            margin-top: 70px;
+            .profile-about-title {
+              width: 100%;
+              height: 40px;
+              font-size: 20px;
+              font-weight: bold;
+              display: flex;
+            }
+            .profile-about-content {
+              width: 60%;
+              height: 230px;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
+              color: #393e47;
+              .about-content-1 {
+                width: 100%;
+                height: 123px;
+              }
+              .about-content-2 {
+                width: 100%;
+                height: 70px;
+              }
+            }
+          }
+          .profile-update-btn {
+            width: 146px;
+            height: 44px;
+            color: #fff;
+            background-color: #232b39;
+            border-radius: 5px;
+          }
+          .time-blog-title {
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 20px;
+          }
+          .edit-opentime-blog {
+            width: 100%;
+            // height: 444px;
+            display: flex;
+            justify-content: space-between;
+            .edit-opentime-blog-left {
+              width: 466px;
+              // height: 100%;
+              .opentime-blog-content {
+                width: 100%;
+                // height: 100%;
+                padding-bottom: 5px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .table td,
+                .table th {
+                  padding-left: 25px;
+                  padding-top: 14px;
+                  .close-all-day-btn {
+                    border: 0;
+                    font-weight: bold;
+                    background-color: #fff;
+                    height: 20px;
+                    color: #000;
+                  }
+                }
+                .check-box-cell {
+                  display: flex;
+                  justify-content: center;
+                }
+                .time-change-btn-group {
+                  .ant-btn {
+                    width: 200px;
+                    height: 42px;
+                    background-color: #232b39;
+                    margin-top: 20px;
+                    color: #fff;
+                  }
+                  .update-time-btn {
+                    background-color: #06c987;
+                  }
+                }
+              }
+            }
+            .edit-opentime-blog-right {
+              width: 312px;
+              .react-calendar {
+                line-height: 0.4;
+                padding-bottom: 5px;
+                border: 2px solid #a0a096;
+                &__navigation {
+                  margin-bottom: 5px;
+                  &__prev2-button {
+                    display: none;
+                  }
+                  &__next2-button {
+                    display: none;
+                  }
+                }
+                &__month-view__days {
+                  button {
+                    margin: 4px;
+                    border: 1px solid #eaeaea;
+                    width: 36px;
+                    height: 22px;
+                    flex-basis: unset !important;
+                  }
+                }
+              }
+              .check-calendar-btn {
+                width: 256px;
+                height: 42px;
+                background-color: #232b39;
+                color: #fff;
+              }
+            }
+            .opentime-blog-title {
+              width: 100%;
+              height: 42px;
+              background-color: #f8f8f8;
+              color: #1c2430;
+              font-weight: 500;
+              display: flex;
+              align-items: center;
+              padding-left: 25px;
+            }
+            .ant-modal-content {
+              width: 500px;
+              .ant-modal-body {
+                padding: 20px;
+              }
+            }
+
+            .ant-select-selection-selected-value {
+              margin-right: 10px;
+	      width: 100px;
+            }
+
+            .time-picker-label {
+              font-weight: 500;
+              width: 80px;
+              display: flex;
+              justify-content: flex-end;
+            }
+
+            .open-time-item {
+              display: flex;
+              align-items: center;
+              .contact-modal-input {
+                margin-bottom: 0px;
+              }
+            }
+
+            .open-time-modal-item {
+              margin-bottom: 20px;
+              display: flex;
+              align-items: center;
+              .contact-modal-input {
+                margin-bottom: 0px;
+              }
+            }
+
+            .close-day-check-blog {
+              width: 100%;
+              height: 30px;
+              display: flex;
+              justify-content: flex-end;
+            }
+
+            .select-time-picker {
+              display: flex;
+              align-items: center;
+            }
+
+            .ant-time-picker {
+              width: 130px;
+            }
+
+            .update-time-btn {
+              background-color: #06c987;
+            }
+
+            .DayPicker {
+              width: 100%;
+              .DayPicker-Months {
+                border: 2px solid #a0a096;
+              }
+              .DayPicker-Day {
+                padding: 12px;
+                border: 2px solid #a0a096;
+                border-radius: 0px;
+              }
+            }
+          }
+        }
+        .profile-contact-opentime {
+          font-weight: 400;
+          padding-top: 37px;
+          background-color: #f9f9f9;
+          // height: 80%;
+          width: 25%;
+          .contact-opentime-wrap {
+            width: 80%;
+            // height: 1065px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            .profile-contact {
+              &-title {
+                font-size: 20px;
+                font-weight: bold;
+              }
+              .ant-divider-horizontal {
+                margin: 10px 0;
+              }
+              &-content {
+                .contact-edit-btn {
+                  margin: 15px 0px;
+                }
+              }
+            }
+            .profile-opentime {
+              // height: 530px;
+              &-title {
+                font-size: 20px;
+                font-weight: bold;
+              }
+              &-content {
+                ul {
+                  padding-left: 20px;
+                  letter-spacing: 1px;
+                  li {
+                    margin-bottom: 30px;
+                  }
+                }
+              }
+              .ant-divider-horizontal {
+                margin: 10px 0px;
+              }
+            }
+          }
+        }
+        .contact-edit-btn {
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          padding: 0;
+          width: 60px;
+          height: 29px;
+          margin-left: 30px;
+        }
+      }
+    }
+  }
+}
+
+.contact-modal-input {
+  margin-bottom: 20px;
+}
+
+// SC CSS start here
+
+@media (max-width: 950px) {
+    .edit-opentime-blog {
+      display: unset !important;
+    }
+    .edit-opentime-blog-left {
+      width: 100% !important;
+      float: left;
+    }
+    .edit-opentime-blog-right {
+      width: 100% !important;
+      float: left;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .profile-picture-about {
+      width: 100% !important;
+    }
+    .profile-contact-opentime {
+      width: 100% !important;
+    }
+    .shop-profile-blog {
+      display: unset !important;
+    }
+    .repair-shop-profile {
+      padding: 80px 0 0 0;
+    }
+    .repair-shop-profile-container
+      .shop-profile-wrap
+      .shop-profile-blog
+      .profile-picture-about
+      .edit-opentime-blog
+      .edit-opentime-blog-left
+      .opentime-blog-content
+      .table
+      th {
+      padding-left: 15px !important;
+    }
+  }
+  
+  @media (max-width: 375px) {
+    .repair-shop-profile {
+      padding: 80px 15px 0 15px;
+    }
+    .edit-opentime-blog-right {
+      overflow: hidden;
+    }
+  }
+  .day-picker .ant-select-selection--single {
+    width: 130px !important;
+  }

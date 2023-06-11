@@ -1,0 +1,127 @@
+.detail-per-phone-page {
+  width: 100%;
+  min-height: 810px;
+  .main-title {
+    width: 100%;
+    height: 76px;
+    background-color: #232a38;
+    .wrap {
+      width: 100%;
+      height: 100%;
+      max-width: 1600px;
+      padding-left: 135px;
+      padding-right: 135px;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      h4 {
+        color: #fff;
+      }
+    }
+  }
+  .main-container {
+    width: 100%;
+    height: 100%;
+    &-wrap {
+      width: 100%;
+      height: 100%;
+      max-width: 1600px;
+      padding-left: 135px;
+      padding-right: 135px;
+      padding-top: 86px;
+      padding-bottom: 130px;
+      display: flex;
+      align-items: center;
+      margin: 0 auto;
+      &-blog {
+        width: 100%;
+        .main-container-title {
+          font-size: 24px;
+          line-height: 24px;
+          font-weight: 500;
+          margin-bottom: 56px;
+        }
+        .main-container-content {
+          width: 100%;
+          .detail-per-phone-table {
+            text-align: center;
+            &-header {
+              background-color: #f8f8f8;
+              color: #1c2430;
+              height: 50px;
+              th:first-child {
+                text-align: left;
+                width: 40%;
+              }
+            }
+            tbody {
+              font-weight: 500;
+              .color-green {
+                color: #06c987;
+              }
+              .color-red {
+                color: red;
+              }
+              .minus-circle-btn:hover {
+                cursor: pointer;
+              }
+              td:first-child {
+                text-align: left;
+              }
+            }
+          }
+          .reparation-change-btn {
+            width: 170px;
+            height: 44px;
+            background-color: #212529;
+            color: #fff;
+            font-weight: 500;
+            font-size: 18px;
+            letter-spacing: 1px;
+            margin-right: 30px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.edit-reparation-modal {
+  .modal-dialog {
+    max-width: 900px;
+    .flex-row {
+      display: flex;
+      align-items: center;
+    }
+    input {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+    .detail-per-phone-table-modal {
+      tbody {
+        tr {
+          td:first-child {
+            width: 30%;
+          }
+        }
+      }
+    }
+    .reparation-change-btn {
+      width: 200px;
+      height: 50px;
+      background-color: #212529;
+      color: #fff;
+      font-weight: 500;
+      font-size: 18px;
+    }
+  }
+}
+  
+
+@media (max-width: 768px){
+  .detail-per-phone-page .main-container-wrap-blog .main-container-content .detail-per-phone-table-header th{width: 100% !important; float: left;}
+  .detail-per-phone-page .main-container-wrap-blog .main-container-content tbody td{width: 100% !important; float: left;}
+  .detail-per-phone-page .main-container-wrap{padding:50px 30px 0 30px !important;}
+  .detail-per-phone-page{margin: 110px 0 0 0 !important;}
+  .detail-per-phone-page .main-title .wrap{padding-left: 75px; padding-right: 75px;}
+}

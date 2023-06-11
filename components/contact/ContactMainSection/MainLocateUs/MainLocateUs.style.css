@@ -1,0 +1,18 @@
+.social-link {
+  display: flex;
+}
+
+.locate-info a, .locate-info a:hover {
+  display: flex;
+  cursor: pointer;
+  color: #232b38;
+}
+
+.social-link a, .social-link a:hover {
+  color: #fff;
+}
+
+.locate-label {
+  letter-spacing: 1px;
+  color: #3a3e47;
+}

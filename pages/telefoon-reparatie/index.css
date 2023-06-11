@@ -1,0 +1,7 @@
+.model-list {
+  margin: 15px 10px 0px 10px;
+}
+.model-list li {
+  cursor: pointer;
+  font-size: 16px;
+}

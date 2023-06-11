@@ -1,0 +1,173 @@
+.account-setting-container {
+  width: 100%;
+  max-width: 1600px;
+  // height: 1046px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &-wrap {
+    width: 100%;
+    // height: 872;
+    padding: 0px 50PX;
+    .setting-title-bar {
+      width: 100%;
+      height: 50px;
+      margin-bottom: 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .setting-title {
+        line-height: 50px;
+        height: 100%;
+        font-size: 42px;
+        font-weight: 700;
+      }
+      font-weight: 500;
+      .setting-sub-title {
+        font-size: 18px;
+      }
+    }
+    .setting-content {
+      width: 100%;
+      // height: 775px;
+      display: flex;
+      justify-content: space-between;
+      .first-setting-blog {
+        width: 30%;
+        &-content {
+          font-size: 14px;
+          padding: 25px;
+          border: 1px solid #eee;
+          &-title {
+            font-weight: 500;
+            margin-bottom: 5px;
+          }
+          &-value {
+            margin-bottom: 7px;
+          }
+          .first-setting-btn-group {
+            margin-top: 30px;
+            display: flex;
+            justify-content: space-between;
+            .account-delete-btn {
+              width: 150px;
+              height: 48px;
+              color: #fff;
+              background-color: #06c987;
+              display: none;
+            }
+          }
+          .account-change-btn {
+            width: 150px;
+            height: 48px;
+            color: #fff;
+            background-color: #232b39;
+          }
+          .change-account-save {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+          }
+        }
+      }
+      .setting-blog-title {
+        width: 100%;
+        // height: 64px;
+        background-color: #f8f8f8;
+        color: #1c2430;
+        display: flex;
+        align-items: center;
+        padding:15px 0 15px 20px;
+        font-size: 22px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+      }
+      .second-setting-blog {
+        width: 30%;
+        height: 100%;
+        &-content {
+          width: 100%;
+          height: 95px;
+          display: flex;
+          align-items: center;
+          border: 1px solid #ececec;
+          padding-left: 20px;
+          margin-bottom: 28px;
+          font-weight: 500;
+          .ant-input {
+            width: 314px;
+            height: 45px;
+          }
+        }
+        .account-setting-appointment {
+          width: 100%;
+          height: 200px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          border: 1px solid #ececec;
+          padding-left: 20px;
+          padding-bottom: 10px;
+          font-weight: 500;
+          .time-per-appointment {
+            display: flex;
+            justify-content: space-between;
+            width: 87%;
+            .ant-select-selection--single {
+              width: 80px;
+            }
+          }
+          .ant-input {
+            width: 314px;
+            height: 45px;
+            margin-top: 10px;
+          }
+          .ant-checkbox-wrapper {
+            margin-left: 0px;
+          }
+          .appointment-change-btn {
+            height: 48px;
+            color: #fff;
+            background-color: #232b39;
+            width: 87%;
+          }
+        }
+      }
+      .third-setting-blog {
+        width: 30%;
+        height: 100%;
+        &-content {
+          border: 1px solid #ececec;
+          padding: 33px;
+          .ant-input {
+            width: 100%;
+            height: 45px;
+            margin-bottom: 15px;
+          }
+          .account-change-password-btn {
+            width: 100%;
+            height: 48px;
+            color: #fff;
+            background-color: #232b39;
+          }
+        }
+      }
+    }
+  }
+}
+
+// SC CSS start here
+
+@media (max-width: 768px){
+  .account-setting-container{padding-top: 110px;}
+}
+
+@media (max-width: 945px){
+  .first-setting-blog{width: 100% !important; float: left; margin-top: 25px;}
+  .second-setting-blog{width: 100% !important; float: left; margin-top: 25px;}
+  .third-setting-blog{width: 100% !important; float: left; margin-top: 25px;}
+  .setting-content {display:unset !important;}
+
+  
+}

@@ -1,0 +1,76 @@
+.brand-model-card {
+  // width: 320px;
+  margin-bottom: 30px;
+  // height: 395px;
+  .brand-model-card-title {
+    width: 100%;
+    height: 45px;
+    background-color: #f8f8f8;
+    color: #1c2430;
+    font-size: 22px;
+    font-weight: 500;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 2px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .brand-model-card-body {
+    width: 100%;
+    padding: 10px 10px;
+    border: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    .ant-divider {
+        margin: 0px;
+    }
+    .ant-checkbox-wrapper {
+      display: flex;
+      align-items: center;
+      height: 35px;
+      font-size: 18px;
+      font-weight: 500;
+      .ant-checkbox {
+        margin-right: 20px;
+      }
+    }
+    &-check {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &box {
+        display: flex;
+        align-items: center;
+        height: 35px;
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(0, 0, 0, 0.65);
+      }
+      .brand-model-reparation-edit:hover {
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.65);
+      }
+      a {
+          color: #007bff;
+          text-decoration: none;
+          background-color: transparent;
+      }
+    }
+  }
+}
+
+@media (max-width: 1150px){
+  .phone-repair-page-content .phone-repair-page-content-wrap-body .ant-row .ant-col{width: 50% !important;}
+}
+
+@media (max-width: 768px){
+  .phone-repair-page-content .phone-repair-page-content-wrap-body .ant-row .ant-col{width: 100% !important;}
+  .phone-repair-page{margin-top: 110px !important;}
+}
+
+@media (max-width: 450px){
+  .phone-repair-page-content{padding: 70px 25px !important;}
+  .phone-repair-page-content-wrap-header{display: unset !important;}
+}

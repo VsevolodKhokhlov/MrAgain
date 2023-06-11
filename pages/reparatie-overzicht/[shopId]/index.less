@@ -1,0 +1,366 @@
+.shop-reparation-overview-page {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+  overflow-y: scroll;
+  .shop-reparation-overview-page-container {
+    width: 100%;
+    max-width: 1600px;
+    // height: 804px;
+    margin: 0 auto;
+    display: flex;
+    background-color: #fff;
+    .dashboard-page-widget {
+      width: 20%;
+      height: inherit;
+      min-height: 804px;
+      background-color: #232b39;
+      text-align: center;
+      color: #fff;
+      margin-right: 20px;
+      .shop-widget-avatar {
+        width: 83px;
+        height: 74px;
+        margin-top: 24px;
+        margin-bottom: 5px;
+      }
+      .widget-shop-title {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      .widget-shop-email {
+        font-size: 14px;
+        font-weight: 500;
+        margin-bottom: 85px;
+      }
+      .widget-shop-appointment {
+        text-align: left;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        a { 
+          color: #fff;
+        }
+        .calendar-icon {
+          margin-right: 25px;
+        }
+        .over-icon {
+          margin-right: 18px;
+        }
+      }
+    }
+    .dashboard-page-content {
+      width: 80% !important;
+      height: 100%;
+      padding-right: 20px;
+      .dashboard-page-header {
+        width: 100%;
+        height: 46px;
+        margin: 23px 0;
+        background-color: #232b39;
+        color: #fff;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 20px;
+        &-avatar {
+          margin-right: 10px;
+        }
+      }
+      .dashboard-page-body {
+        &-title {
+          height: 94px;
+          width: 100%;
+          font-size: 22px;
+          font-weight: 500;
+          display: flex;
+          align-items: center;
+        }
+        .new-appointment-blog {
+          width: 343px;
+          
+          background-color: #f8f8f8;
+          margin-bottom: 58px;
+          padding: 30px 20px;
+          color: #1c2430;
+          .new-appointment-count {
+            display: flex;
+            justify-content: space-between;
+            .appointment-avatar {
+              background-color: #06c987;
+            }
+            .count {
+              font-size: 18px;
+              font-weight: 500;
+              p {
+                margin: 0px;
+                padding: 0px;
+              }
+            }
+          }
+          .new-appointment-percent {
+            margin-top: 10px;
+          }
+        }
+        .shop-appointment-table-header {
+          display: flex;
+          justify-content: flex-end;
+          margin-bottom: 15px;
+          width: 100%;
+          .filter-btn-group {
+            display: flex;
+            width: 60%;
+            .filter-input {
+              margin-right: 10px;
+              height: 40px;
+            }
+            .search-btn {
+              width: 400px;
+              height: 40px;
+              background-color: #232b39;
+              color: #fff;
+              font-weight: 500;
+              font-size: 18px;
+            }
+          }
+          .shop-appointment-table-title {
+            font-size: 22px;
+            font-weight: 500;
+          }
+          .sort-by-date {
+            .ant-calendar-picker {
+              margin-right: 10px;
+              input {
+                width: 20px;
+              }
+              .ant-calendar-picker-icon {
+                right: 5px;
+              }
+            }
+          }
+        }
+        .shop-appointment-table-body {
+          table {
+            thead {
+              th {
+                background-color: #f8f8f8;
+                color: #1c2430;
+                font-weight: 400;
+              }
+            }
+            tbody {
+              .overview-table-body {
+                height: 50px;
+                overflow: auto;
+                overflow-x: scroll;
+              }
+              tr {
+                .reparation-action-btn-group {
+                  display: flex;
+                  justify-content: space-between;
+                  .reparation-change-btn {
+                  }
+                  .reparation-cancel-btn {
+                    background-color: #fd5c5c;
+                    color: #fff;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.shop-dashboard-bell {
+  margin: 0 20px;
+  font-size: 26px;
+}
+.ant-badge {
+  right: 23px;
+  top: -16px;
+  .ant-badge-count {
+    height: 15px;
+    width: 15px;
+    min-width: 15px;
+    line-height: 15px;
+    padding: 0;
+  }
+}
+
+.reparation-change-modal {
+  .modal-dialog {
+    max-width: 600px;
+    .select-device-reparation {
+      display: flex;
+      width: 100%;
+      justify-content: space-around;
+      border: 1px solid #eee;
+      padding: 10px;
+    }
+    .repair-input-group {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 30px;
+      margin: 20px 0;
+      .repair-input {
+        width: 390px;
+      }
+      .repair-input-label {
+        width: 109px;
+        text-align: end;
+      }
+    }
+    .repair-input-group-image {
+      border: 1px solid #eee;
+      padding: 10px 0;
+      margin: 0 auto;
+      width: 88%;
+      .image-picker-label {
+        margin-top: 10px;
+        text-align: end;
+        .image-picker-btn {
+          margin-right: 20px;
+        }
+        .image-picker-label-btn {
+          margin-right: 20px;
+          border: 1px solid #e0d6d6;
+          border-radius: 5px;
+          padding: 4px 10px;
+          color: rgba(0, 0, 0, 0.65);
+          font-size: 14px;
+        }
+        .image-picker-label-btn:hover {
+          color: #29d697;
+          background-color: #fff;
+          border-color: #29d697;
+          cursor: pointer;
+        }
+      }
+    }
+    .repair-input-group-check {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 30px;
+      margin: 20px 0;
+    }
+    .ant-checkbox-wrapper {
+      margin-right: 10px;
+    }
+    .image-picker-input {
+      display: none;
+    }
+    .image_picker {
+      width: 100%;
+
+      .responsive {
+        position: relative;
+        margin: 0 6px;
+        float: left;
+        opacity: 1;
+
+        .thumbnail {
+          border: 1px solid #ddd; /* Gray border */
+          border-radius: 4px; /* Rounded border */
+          padding: 5px; /* Some padding */
+          width: 50px; /* Set a small width */
+          opacity: 1;
+          margin: 0;
+
+          &:hover {
+            box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.7);
+          }
+        }
+
+        .selected {
+          background-color: rgba(0, 140, 186, 1);
+        }
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        .checked {
+          display: none;
+        }
+      }
+
+      .selected {
+        opacity: 0.7;
+
+        .checked {
+          display: inline-block;
+          transition: 0.5s ease;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          .icon {
+            background-size: cover;
+            height: 75px;
+            width: 75px;
+          }
+        }
+      }
+
+      .clear {
+        clear: both;
+      }
+    }
+  }
+}
+
+.repir-single-picture-modal {
+  .repir-single-picture {
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+  }
+}
+.menu-btn{display: none;}
+
+// SC CSS start here
+
+@media (max-width: 1020px){
+  .dashboard-page-widget{display: none;} 
+  // .shop-widget-avatar{width: 0% !important;}
+  .menu-btn{display: block; cursor: pointer; width: 20px; margin: 33px 0px 0px 10px; z-index: 999;}
+  .menu-btn img{width: 30px;}
+  // .menu-btn:hover + .dashboard-page-widget{width:20% !important;}
+  // .menu-btn:hover + .shop-widget-avatar{}  
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content .dashboard-page-body-title{padding: 0 0 0 30px !important;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-widget{width: 50%; position: absolute; z-index: 9;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content{width: 95% !important;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-body table thead th{width: 12.5%; float: left;}  
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-body table tbody td{width: 12.5% !important; float: left;}
+} 
+
+@media (max-width: 890px){
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-body table thead th{width: 25%; float: left;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-body table tbody td{width: 25% !important; float: left;}
+}
+
+@media (max-width: 768px){
+  .shop-reparation-overview-page{margin-top: 110px;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-widget{width: 75%;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-body table thead th{width: 50%; float: left;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-body table tbody td{width: 50% !important; float: left;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content{width: 91% !important;}
+  .shop-dashboard-page .shop-dashboard-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-header{display: unset !important;}
+  .shop-dashboard-page .shop-dashboard-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-header .shop-appointment-table-title{width: 100%;}
+  .shop-dashboard-page .shop-dashboard-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-header .sort-by-date{width: 100%; padding: 20px 0;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-header .filter-btn-group{width: 100%;}
+}
+
+@media (max-width: 450px){
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-widget{width: 100%;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content{width: 84% !important;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-header .filter-btn-group{display: unset; text-align: center;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-header .filter-btn-group .filter-input{margin-top: 10px;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-header .filter-btn-group .search-btn{width: 150px; margin-top: 10px;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-body table thead th{width: 100%; float: left;}
+  .shop-reparation-overview-page .shop-reparation-overview-page-container .dashboard-page-content .dashboard-page-body .shop-appointment-table-body table tbody td{width: 100% !important; float: left;}
+} 
+
+
+
